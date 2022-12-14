@@ -9,7 +9,7 @@ int main()
     srand(time(NULL));
     int mas[MAX][MAX];
     int a, b;
-    int k, p;
+    int g, o;
     int i, j;
     int sum = 0;
     cout << "Введите количество строк: ";
@@ -17,10 +17,10 @@ int main()
     cout << "Введите количество столбцов: ";
     cin >> b;
     cout << "----------------------------------\n";
-    cout << "Строка k = ";
-    cin >> k;
-    cout << "Строка p = ";
-    cin >> p;
+    cout << "Строка g = ";
+    cin >> g;
+    cout << "Строка o = ";
+    cin >> o;
     cout << "----------------------------------\n";
     for (int i = 0; i < a; i++)
     {
@@ -32,14 +32,14 @@ int main()
         cout << endl;
     }
     cout << endl;
-    for (int i = k; i < p - 1; i++)
+    for (int i = g; i < o - 1; i++)
     {
-        for (j = 0; j < m; j++)
+        for (j = 0; j < b; j++)
         {
             sum += mas[i][j];
         }
     }
-    cout << "Сумма елементов между " << k << " и " << p << " строкой: " << sum << endl;
+    cout << "Сумма елементов между " << g << " и " << o << " строкой: " << sum << endl;
     system("PAUSE");
     return 0;
 }
