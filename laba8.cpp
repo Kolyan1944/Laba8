@@ -8,23 +8,23 @@ int main()
     setlocale(LC_ALL, "RU");
     srand(time(NULL));
     int mas[MAX][MAX];
-    int n, m;
+    int a, b;
     int k, p;
     int i, j;
     int sum = 0;
     cout << "Введите количество строк: ";
-    cin >> n;
+    cin >> a;
     cout << "Введите количество столбцов: ";
-    cin >> m;
+    cin >> b;
     cout << "----------------------------------\n";
     cout << "Строка k = ";
     cin >> k;
     cout << "Строка p = ";
     cin >> p;
     cout << "----------------------------------\n";
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < a; i++)
     {
-        for (int j = 0; j < m; j++)
+        for (int j = 0; j < b; j++)
         {
             mas[i][j] = rand() % 20 - 10;
             cout << mas[i][j] << "\t";
